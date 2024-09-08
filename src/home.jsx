@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Expense from "./expense";
 import ListItems from "./listItems";
-import data from "./data.json";
 
 export default function Home() {
   const [items, setItems] = useState([]);

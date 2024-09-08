@@ -1,0 +1,11 @@
+## first page
+- 3 boxes with total balance,income,expense
+- place to add:
+    - name of expense:
+    - amount
+    - Expense Description
+    - add expense button
+    - after adding amount and expese name and clicking add the list of expenses should be increased
+- list of expenses added in one day
+## second page
+- list of all expenses(history)

@@ -1,12 +1,19 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import ListItems from "./listItems";
+import Expense from "./expense";
+import Navbar from "./navbar";
+import Home from "./home";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <div>hello</div>;
+  return (
+    <div className="summary">
+      <Navbar />
+      <Home />
+    </div>
+  );
 }
 
 export default App;

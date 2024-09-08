@@ -1,0 +1,12 @@
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.expense {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

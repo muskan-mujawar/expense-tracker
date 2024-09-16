@@ -1,12 +1,58 @@
-.centre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.space-grotesk-fontstyle {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
-.expense {
+
+body {
+  background-color: white;
+  margin: 20px;
+}
+
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+}
+
+.container {
+  text-align: center;
+}
+.border {
+  width: fit-content;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+}
+
+.size {
+  font-size: 3rem;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.income-box {
+  border: 1px solid rgb(22, 74, 22);
+  color: green;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  background-color: rgba(0, 128, 0, 0.036);
+}
+
+.expense-box {
+  border: 1px solid rgb(209, 19, 19);
+  color: red;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.038);
+}
+
+h5 {
+  font-weight: 100px;
+}
+.flex {
+  display: flex;
 }

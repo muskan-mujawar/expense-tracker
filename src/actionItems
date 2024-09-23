@@ -9,3 +9,34 @@
 - list of expenses added in one day
 ## second page
 - list of all expenses(history)
+
+
+Lifestyle
+Education
+   Healtcare
+    Travelling
+     
+         Food and beavrage
+         others
+         
+          
+        type="button"
+              className="ms-1"
+              onClick={() => {
+                setItems([
+                  ...items,
+                  {
+                    expenseName: expense,
+                    amount: parseInt(amount),
+                    date: new Date().toDateString(),
+                    edit: <button onClick={handleEdit()}>edit</button>,
+                  },
+                ]);
+              }}
+              
+
+
+              placeholder="Enter Name"
+              size="sm"
+              onChange={(e) => setExpense(e.target.value)}
+              width="15%"

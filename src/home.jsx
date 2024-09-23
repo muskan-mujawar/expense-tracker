@@ -3,17 +3,11 @@ import ListItems from "./listItems";
 import { FiPlus } from "react-icons/fi";
 
 import { FiMinus } from "react-icons/fi";
-import Dropdown from "./assets/dropdown";
 
 export default function Home() {
   const [items, setItems] = useState([]);
   const [amount, setAmount] = useState("");
   const [expense, setExpense] = useState("");
-  const [category, setCategory] = useState("");
-
-  const handleChange = () => {
-    setBalance(income - totalExpense);
-  };
 
   function calculateIncome() {
     return items
@@ -47,29 +41,32 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <p className="mt-4">
-            <label htmlFor="eName"></label>Name:{" "}
+          <p className=" mt-2">
+            Name:{" "}
             <input
-              value={expense}
+              placeholder="Enter Name "
+              size="sm"
               onChange={(e) => setExpense(e.target.value)}
-              name=" your expense"
+              width="15%"
             />
           </p>
           <p className=" mt-2">
             Amount:{" "}
             <input
-              name="amt"
-              value={amount}
+              placeholder="Enter Amount "
+              size="sm"
               onChange={(e) => setAmount(e.target.value)}
-              type="number"
+              width="15%"
             />
             <button
-              type="button"
-              className="ms-1"
+              className="ms-2"
+              colorScheme="teal"
+              variant="ghost"
               onClick={() => {
                 setItems([
                   ...items,
                   {
+                    id: crypto.randomUUID(),
                     expenseName: expense,
                     amount: parseInt(amount),
                     date: new Date().toDateString(),
@@ -80,12 +77,9 @@ export default function Home() {
               Add
             </button>
           </p>
-          <p className=" mt-2 flex">
-            Category: <Dropdown />
-          </p>
         </div>
       </div>
-      <ListItems data={items} />
+      <ListItems setList={setItems} data={items} />
     </div>
   );
 }

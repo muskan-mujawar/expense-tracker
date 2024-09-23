@@ -1,51 +1,27 @@
-import React from "react";
+/*import React, { useState } from "react";
 
 export default function Dropdown() {
+  const [dropdown, setDropdown] = useState("");
+
   return (
-    <div class="d-flex">
-      <div class="dropdown me-1">
-        <button
-          type="button"
-          class="btn dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-          data-bs-offset="10,20"
-        >
-          Offset
-        </button>
-        <ul class="dropdown-menu">
-          <li>
-            <a class="dropdown-item" href="#">
-              Action
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              Another action
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              Something else here
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              Something else here
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              Something else here
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              Something else here
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="dropdown">
+      <button
+        class="btn  dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li> Action</li>
+        <li>Another action</li>
+        <li value={dropdown} onChange={(e) => setDropdown(e.target.value)}>
+          Something else here
+        </li>
+
+        <li>Separated link</li>
+      </ul>
     </div>
   );
-}
+}*/
